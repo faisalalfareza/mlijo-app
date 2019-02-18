@@ -9,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     color: #7f8c8d;
-    font-family: 'Helvetica_Neue' !important;
+    font-family: 'Lato' !important;
+    /*font-family: 'Helvetica_Neue' !important;*/
 }
 
 .bg-login {
@@ -177,7 +178,7 @@ ion-side-menu .list .item.item-positive {
     padding: 15px;
 }
 .popup-buttons{
-    border-top: 2px solid #3498db;
+    border-top: 2px solid #88C057;
     padding: 0;
     margin: 0;
 }
@@ -186,11 +187,11 @@ ion-side-menu .list .item.item-positive {
     margin: 0;
 }
 .popup-buttons .button {
-   border-left: 0.25px solid #3498db;
-   border-right: 0.25px solid #3498db;
+   border-left: 0.25px solid #88C057;
+   border-right: 0.25px solid #88C057;
    /*border-radius: 0px 0px 25px 25px !important;*/
    background-color: transparent;
-   color: #3498db;
+   color: #88C057;
    padding: 0;
    margin: 0;
    width: 100% auto;
@@ -244,7 +245,9 @@ ion-side-menu .list .item.item-positive {
     border-radius:10px;
     color:#2980b9;
 }
-
+.list-grocery {
+    width: 100%;
+}
 
 span.back-text {
     display: none !important;
@@ -256,13 +259,13 @@ span.back-text {
 }
 
 .col.col-50.sub-menu .sub {
-    padding: 0;
+    padding: 0.5em;
 }
 
 .col.col-50.sub-menu .sub p {
     font-weight: 700;
     font-size: 12px;
-    color: #2980b9;
+    color: #25272B;
 }
 
 .col.col-50.sub-menu img {
@@ -299,13 +302,14 @@ w {
 }
 
 .img1 {
-    position: relative;
+    /*position: relative;
     background-image: url("../img/1.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
+    background-color: #25272B;
 }
 
 .img2 {
@@ -430,11 +434,12 @@ w {
 .bar-custom>.bar,
 .bar.bar-custom {
     border: 0px !important;
+    font-family: "Lato";
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     border-bottom-color: transparent !important;
     background-image: none !important;
     border-bottom: none !important;
-    background-color: #0D6DB6;
+    background-color: #25272B;
     color: #fff;
 }
 
@@ -452,7 +457,7 @@ w {
     border-top-color: transparent !important;
     background-image: none !important;
     border-top: none !important;
-    background-color: #0D6DB6;
+    background-color: #88C057;
     color: #fff;
 }
 
@@ -1025,7 +1030,7 @@ whatsnew-image {
 
 #category {
     margin-bottom: 0 !important;
-    color: #0c60ee;
+    color: white;
     font-size: 12px;
 }
 
@@ -1040,7 +1045,7 @@ whatsnew-image {
 
 .openhour {
     text-align: right;
-    color: #0c60ee;
+    color: white;
     padding: 0;
     padding-left: 5%;
     align-content: center
@@ -1052,7 +1057,7 @@ whatsnew-image {
 }
 
 .contentTenantBottom {
-    background-color: #EEEEEE;
+    background-color: #FAFAFA;
     color: #0c60ee;
 }
 

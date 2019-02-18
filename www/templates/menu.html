@@ -5,8 +5,9 @@
             </ion-nav-back-button>
 
             <ion-nav-buttons side="left">
-                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-                </button>
+                <img src="img/groceries-bag.png" width="30px" height="30px">
+                <!--<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>-->
             </ion-nav-buttons>
 
             <ion-nav-buttons side="right">
@@ -28,19 +29,7 @@
             <ion-tab title="{{ 'main' | translate }}" icon-on="sc-main-on" icon-off="sc-main-off" href="#/app/main">
                 <ion-nav-view name="main-content"></ion-nav-view>
             </ion-tab>
-
-            <ion-tab title="{{ 'profile' | translate }}" icon-off="sc-profile-off" icon-on="sc-profile-on" href="#/app/profile">
-                <ion-nav-view name="profile-content"></ion-nav-view>
-            </ion-tab>
-
-            <ion-tab title="{{ 'map' | translate }}" icon-off="sc-map-off" icon-on="sc-map-on" ui-sref="app.map">
-                <ion-nav-view name="map-content"></ion-nav-view>
-            </ion-tab>
-
-            <ion-tab title="{{ 'download' | translate }}" icon-off="sc-download-off" icon-on="sc-download-on" href="#/app/download">
-                <ion-nav-view name="download-content"></ion-nav-view>
-            </ion-tab>
-
+            
             <ion-tab title="{{ 'more' | translate }}" icon-off="sc-more-off" icon-on="sc-more-on" href="#/app/more">
                 <ion-nav-view name="more-content"></ion-nav-view>
             </ion-tab>

@@ -2,9 +2,35 @@ angular
     .module('livein')
     .controller('busSchedule', busSchedule);
 
-    function busSchedule($scope, $state, $compile, $ionDrawerVerticalDelegate, $ionicSlideBoxDelegate, $ionicLoading, $filter) {
-
+    function busSchedule($scope, $state, $ionicPopup, $compile, $ionDrawerVerticalDelegate, $ionicSlideBoxDelegate, $ionicLoading, $filter) {
+        $scope.sellerTerms = false;
         $scope.daily = 'active';
+
+        $scope.grocerys = [
+            { grocery:'Sayur Kangkung', price:'2500', satuan:'ikat' },
+            { grocery:'Sayur Bayam', price:'2000', satuan:'ikat' },
+            { grocery:'Wortel', price:'3000', satuan:'kg' }
+        ];
+
+        $scope.openTerms = function() {
+            $scope.sellerTerms = true;
+        }
+
+        $scope.submitBooking = function() {
+            var alertPopup = $ionicPopup.alert({
+                title: 'Terimakasih',
+                template: 'Pesanan anda akan diproses',
+                okText: $filter('translate')('okay'),
+                okType: "button-stable",
+                cssClass: "alertPopup"
+            });
+
+            alertPopup.then(function(res) {
+                if (res) {
+                    $state.go('app.main');
+                }
+            });
+        }
 
         //  marker
         var infowindow = new google.maps.InfoWindow;

@@ -9,16 +9,8 @@ angular
         }
         
         $scope.fullname = $localStorage.currentUser.data[0].fullname;
-        dataWhatsNew.getDataWhatsNew(function(response) {
-            $timeout(function() {
-                if (response != false) {
-                    $scope.news = response;
-                    $ionicSlideBoxDelegate.update();
-                } else {
-                    $scope.news = [{ name: $filter('translate')('no_news') }];
-                }
-            }, 1000);
-        });
+        $scope.news = [{ header:'img/headers.png' },{ header:'img/cabai-hijau.jpg' },{ header:'img/cabai-merah.jpg' }];
+        
         talktoUs.getTalktoUs(function(response) {
             if (response != false) {
                 $scope.data = response;

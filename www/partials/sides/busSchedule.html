@@ -1,12 +1,12 @@
-<ion-view view-title="{{'bus'| translate}}">
+<ion-view view-title="PESAN">
     <ion-drawer-vertical-wrapper class="has-header" direction="down" state="opened" delegate-handle="first">
-        <div class="tabs-top tabs-background-light tabs-color-positive">
+        <div class="tabs-top tabs-background-light tabs-color-positive" style="color:#88C057">
             <div class="tabs" style="border:0;outline:0;top:0;height:3em;">
-                <a class="tab-item {{daily}}" style="border-bottom:{{daily == 'active' ? '5px solid #2980b9' : '5px solid #ecf0f1'}};font-size:90%;" ng-click="previous()" ng-show="slideIndex = 1">
-                    <p style="margin-top:-0.5em;"> {{'daily'| translate}} </p>
+                <a class="tab-item {{daily}}" style="border-bottom:{{daily == 'active' ? '5px solid #88C057' : '5px solid #ecf0f1'}};font-size:90%;" ng-click="previous()" ng-show="slideIndex = 1">
+                    <p style="margin-top:-0.5em;color:#88C057"> PILIH BAHAN </p>
                 </a>
-                <a class="tab-item {{weekend}}" style="border-bottom:{{weekend == 'active' ? '5px solid #2980b9' : '5px solid #ecf0f1'}};font-size:90%;" ng-click="next()" ng-show="slideIndex = 2">
-                    <p style="margin-top:-0.5em;"> {{'weekly'| translate}} </p>
+                <a class="tab-item {{weekend}}" style="border-bottom:{{weekend == 'active' ? '5px solid #88C057' : '5px solid #ecf0f1'}};font-size:90%;" ng-click="next()" ng-show="slideIndex = 2">
+                    <p style="margin-top:-0.5em;color:#88C057"> KONFIRMASI </p>
                 </a>
             </div>
         </div>
@@ -14,296 +14,83 @@
 
             <ion-slide-box on-slide-changed="slideChanged(index)" show-pager="false" style="padding:0;">
 
-                <ion-slide style="text-align:center;height:auto;padding:0;">
+                <ion-slide style="height:auto;padding:0;">
                     <!-- Start : Monday - Friday -->
                     <div class="row" style="margin-top:35px;height:auto;">
-                        <div class="col col-50" style="border-right: 0.25px solid #2980b9;">
-                            <table align="center" class="table-bus" style="color:#000">
-                                <tr>
-                                    <th style="font-weight:bold">LIPPO</th>
-                                    <th style="font-weight:bold">BLOK-M</th>
-                                    <th style="font-weight:bold">HALTE CROWN</th>
-                                </tr>
-                                <tr>
-                                    <td>5:00</td>
-                                    <td>6:00</td>
-                                    <td>6:30</td>
-                                </tr>
-                                <tr>
-                                    <td>5:30</td>
-                                    <td>6:30</td>
-                                    <td>7:00</td>
-                                </tr>
-                                <tr>
-                                    <td>5:45</td>
-                                    <td>6:45</td>
-                                    <td>7:15</td>
-                                </tr>
-                                <tr>
-                                    <td>6:00</td>
-                                    <td>7:00</td>
-                                    <td>7:30</td>
-                                </tr>
-                                <tr>
-                                    <td>6:30</td>
-                                    <td>7:30</td>
-                                    <td>8:00</td>
-                                </tr>
-                                <tr>
-                                    <td>7:00</td>
-                                    <td>8:00</td>
-                                    <td>8:45</td>
-                                </tr>
-                                <tr>
-                                    <td>8:00</td>
-                                    <td>9:15</td>
-                                    <td>9:30</td>
-                                </tr>
-                                <tr>
-                                    <td>8:45</td>
-                                    <td>10:00</td>
-                                    <td>10:15</td>
-                                </tr>
-                                <tr>
-                                    <td>9:30</td>
-                                    <td>10:45</td>
-                                    <td>11:00</td>
-                                </tr>
-                                <tr>
-                                    <td>10:15</td>
-                                    <td>11:30</td>
-                                    <td>11:45</td>
-                                </tr>
-                                <tr>
-                                    <td>11:00</td>
-                                    <td>12:00</td>
-                                    <td>12:30</td>
-                                </tr>
-                                <tr>
-                                    <td>12:00</td>
-                                    <td>13:00</td>
-                                    <td>13:45</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col col-50">
-                            <table align="center" class="table-bus" style="color:#000">
-                                <tr style="font-weight:bold">
-                                    <th style="font-weight:bold">LIPPO</th>
-                                    <th style="font-weight:bold">BLOK-M</th>
-                                    <th style="font-weight:bold">HALTE CROWN</th>
-                                </tr>
-                                
-                                <tr>
-                                    <td>13:00</td>
-                                    <td>14:00</td>
-                                    <td>14:15</td>
-                                </tr>
-                                <tr>
-                                    <td>13:45</td>
-                                    <td>15:00</td>
-                                    <td>15:15</td>
-                                </tr>
-                                <tr>
-                                    <td>14:45</td>
-                                    <td>16:00</td>
-                                    <td>16:15</td>
-                                </tr>
-                                <tr>
-                                    <td>15:30</td>
-                                    <td>16:30</td>
-                                    <td>16:45</td>
-                                </tr>
-                                <tr>
-                                    <td>16:00</td>
-                                    <td>17:15</td>
-                                    <td>17:30</td>
-                                </tr>
-                                <tr>
-                                    <td>16:30</td>
-                                    <td>17:45</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>17:00</td>
-                                    <td>18:15</td>
-                                    <td>18:30</td>
-                                </tr>
-                                <tr>
-                                    <td>17:30</td>
-                                    <td>18:45</td>
-                                    <td>19:00</td>
-                                </tr>
-                                <tr>
-                                    <td>18:15</td>
-                                    <td>19:30</td>
-                                    <td>20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>19:00</td>
-                                    <td>20:00</td>
-                                    <td>20:30</td>
-                                </tr>
-                                <tr>
-                                    <td>20:15</td>
-                                    <td>-</td>
-                                    <td>21:00</td>
-                                </tr>
-                                <tr>
-                                    <td>21:15</td>
-                                    <td>-</td>
-                                    <td>22:15</td>
-                                </tr>
-                            </table>
+                        <input id="input" style="margin-top:1em;font-size:10px;width:100%;padding:20px;border-bottom: 1px solid #ecf0f1 !important;text-align:center" ng-model="searchGrocery" type="text" 
+                        placeholder="Cari Bahan"  required />
+                    </div>
+                    <div class="row" style="margin-top:3px">
+                        <ion-list class="currency" style="width:100%;">
+                            <ion-item ng-repeat="list in grocerys | filter : searchGrocery" class="item" style="padding:3px;border:0;">
+                                <div class="row" style="padding:0;margin:0;font-family:'Lato'">
+                                    <div class="col col-10">
+                                        <ion-checkbox style="border-width:0;width:50px;margin-top:0.2em;text-overflow:ellipsis;white-space:nowrap;" ng-click="maxCheck($index)" ng-model="selected[$index]" ng-change="tesslected($index,selected)"> </ion-checkbox>
+                                    </div>
+
+                                    <div class="col col-30">
+                                        <p style="margin-top:0.7em;margin-left:4em;font-size:12px;padding-right:3px;letter-spacing1px;">{{list.grocery}}</p>
+                                    </div>
+                                    <div class="col col-30" style="background-color:rgba(236, 240, 241, 0.5);">
+                                        <p style="margin-top:0.7em;font-size:9px;font-weight:bold;padding-left:3px;padding-right:3px;">{{list.price}}/{{list.satuan}}</p>
+                                    </div>
+                                    <div class="col col-30">
+                                        <input type="text" placeholder="Berapa?" style="font-size:12px;" required />
+                                    </div>
+                                </div>
+                            </ion-item> 
+                            <div class="col col-50">
+                                <img ng-src="img/button-add.png" ng-click="openTerms()">
+                            </div>
+                            <div ng-show="sellerTerms" class="list" style="width:100%;padding:0px 20px 0px 20px">
+                                <label class="item item-input" style="border-radius:8px;">
+                                    <textarea placeholder="Catatan : untuk tambahan pesanan ini akan kami konfirmasikan secepat mungkin" style="font-size:12px;width:100%;height:3em;text-overflow:ellipsis;white-space:wrap;height:5em;padding:5px;"></textarea>
+                                </label>
+                            </div>                    
+                        </ion-list>
+                    </div>
+                    <div class="row" style="padding:20px;">
+                        <div class="col col-100"> 
+                            <div style="position:fixed;left:1.5em;text-align:left;line-height:1.5px;">
+                                <p style="top:-0.5em;bottom:0;color:black;font-size:12px;font-family:'Lato'">Total Belanjaan Sementara</p>
+                                <p style="top:0.5em;bottom:0;color:black;font-weight:bold;font-size:13px;font-family:'Calibri Light'">Rp. 10000</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="row" style="padding:20px;">
+                        <button class="button button-block" ng-click="next()" style="border-radius:0;background-color:#88C057 !important;border:0;outline:0;color:white;bottom:0;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);">Lanjutkan</button>
+                    </div>
+                    
                     <!-- End : Monday - Friday -->
                 </ion-slide>
 
                 <ion-slide>
                     <!-- Start : Saturday & Sunday -->
                     <div class="row" style="margin-top:35px;height:auto">
-                        <div class="col col-50">
-                            <table align="center" class="table-bus" style="color:#000">
-                                <tr>
-                                    <th style="font-weight:bold">LIPPO</th>
-                                    <th style="font-weight:bold">BLOK-M</th>
-                                    <th style="font-weight:bold">HALTE CROWN</th>
-                                </tr>
-                                <tr>
-                                    <td>6:00</td>
-                                    <td>7:30</td>
-                                    <td>7:45</td>
-                                </tr>
-                                <tr>
-                                    <td>7:30</td>
-                                    <td>8:00</td>
-                                    <td>8:15</td>
-                                </tr>
-                                <tr>
-                                    <td>7:45</td>
-                                    <td>8:30</td>
-                                    <td>9:00</td>
-                                </tr>
-                                <tr>
-                                    <td>8:45</td>
-                                    <td>9:30</td>
-                                    <td>9:45</td>
-                                </tr>
-                                <tr>
-                                    <td>9:15</td>
-                                    <td>10:15</td>
-                                    <td>10:30</td>
-                                </tr>
-                                <tr>
-                                    <td>10:00</td>
-                                    <td>11:00</td>
-                                    <td>11:15</td>
-                                </tr>
-                                <tr>
-                                    <td>10:45</td>
-                                    <td>11:45</td>
-                                    <td>12:00</td>
-                                </tr>
-                                <tr>
-                                    <td>11:30</td>
-                                    <td>12:30</td>
-                                    <td>12:45</td>
-                                </tr>
-                                <tr>
-                                    <td>12:15</td>
-                                    <td>13:15</td>
-                                    <td>13:30</td>
-                                </tr>
-                                <tr>
-                                    <td>13:00</td>
-                                    <td>14:00</td>
-                                    <td>14:15</td>
-                                </tr>
-                            </table>
+                        <div class="col col-100" style="padding:20px;">
+                            <label class="item item-input" style="border-radius:8px;margin-top:0.5em;">
+                                <textarea placeholder="Catatan : untuk tambahan pesanan ini akan kami konfirmasikan secepat mungkin" style="font-size:12px;width:100%;height:3em;text-overflow:ellipsis;white-space:wrap;height:5em;padding:5px;" required></textarea>
+                            </label>
+
+                            <div class="row" style="padding:20px;">
+                                <div class="col col-100"> 
+                                    <div style="position:fixed;left:1.5em;text-align:left;line-height:1.5px;">
+                                        <p style="top:-0.5em;bottom:0;color:black;font-size:12px;font-family:'Lato'">Total Belanjaan Sementara</p>
+                                        <p style="top:0.5em;bottom:0;color:black;font-weight:bold;font-size:13px;font-family:'Calibri Light'">Rp. 10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="padding:20px;">
+                                <div class="col col-50">
+                                    <button class="button button-block" ng-click="previous()" style="border-radius:0;background-color:#ecf0f1 !important;border:0;outline:0;color:88C057;bottom:0;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);font-size:12px;">Kembali</button>
+                                </div>
+                                <div class="col col-50">
+                                    <button class="button button-block" ng-click="submitBooking()" style="border-radius:0;background-color:#88C057 !important;border:0;outline:0;color:white;bottom:0;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);font-size:12px;">Pesan</button>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col col-50" style="border-left: 0.25px solid #2980b9;">
-                            <table align="center" class="table-bus" style="color:#000">
-                                <tr style="font-weight:bold">
-                                    <th style="font-weight:bold">LIPPO</th>
-                                    <th style="font-weight:bold">BLOK-M</th>
-                                    <th style="font-weight:bold">HALTE CROWN</th>
-                                </tr>
-                                <tr>
-                                    <td>13:45</td>
-                                    <td>14:00</td>
-                                    <td>15:00</td>
-                                </tr>
-                                <tr>
-                                    <td>14:30</td>
-                                    <td>15:30</td>
-                                    <td>15:45</td>
-                                </tr>
-                                <tr>
-                                    <td>15:15</td>
-                                    <td>16:15</td>
-                                    <td>16:30</td>
-                                </tr>
-                                <tr>
-                                    <td>16:00</td>
-                                    <td>17:00</td>
-                                    <td>17:15</td>
-                                </tr>
-                                <tr>
-                                    <td>16:45</td>
-                                    <td>17:45</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>17:30</td>
-                                    <td>18:30</td>
-                                    <td>18:45</td>
-                                </tr>
-                                <tr>
-                                    <td>18:15</td>
-                                    <td>19:15</td>
-                                    <td>19:30</td>
-                                </tr>
-                                <tr>
-                                    <td>19:00</td>
-                                    <td>20:00</td>
-                                    <td>20:15</td>
-                                </tr>
-                                <tr>
-                                    <td>20:00</td>
-                                    <td>-</td>
-                                    <td>21:15</td>
-                                </tr>
-                                <tr>
-                                    <td>21:15</td>
-                                    <td>-</td>
-                                    <td>22:00</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row" style="height:auto">
-                        <div class="col col-50">
-                            <table align="center" class="table-bus" style="color:#000">
-                                <tr>
-                                    <th style="font-weight:bold">INTERNAL</th>
-                                    <th style="font-weight:bold"></th>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 1em">{{'session'| translate}} 1</td>
-                                    <td style="padding-left: 1em">06.00 - 09.00</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 1em">{{'session'| translate}} 2</td>
-                                    <td style="padding-left: 1em">12.00 - 14.00</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 1em">{{'session'| translate}} 3</td>
-                                    <td style="padding-left: 1em">16.00 - 21.00</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col col-50"></div>
                     </div>
                     <!-- End : Saturday & Sunday -->
                 </ion-slide>

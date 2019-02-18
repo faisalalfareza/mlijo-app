@@ -1,4 +1,4 @@
-<ion-view view-title="{{'app_name' | translate}}" style="background-color:#ecf0f1" cache-view="false" can-swipe-down="false">
+<ion-view view-title="MLIJO" style="background-color:#FAFAFA" cache-view="false" can-swipe-down="false">
     <ion-content>
 
         <div class="row" ng-controller="weather" style="position:relative;background-color:#fff;align-items:center;height:2.5em">
@@ -29,99 +29,50 @@
             <a ng-click="next()" style="position:absolute;right:1.5em;top:5.5em;z-index:1"><i class="ion-chevron-right" style="color:white;"></i></a>
 
             <ion-slide-box auto-play="true" does-continue="true" slide-interval="3000" active-slide="currentIndex" on-slide-changed="slideChanged(index)" style="height:auto;padding:0;margin:0;position:relative;">
-                <ion-slide class="slider-slide-image" ng-repeat="list in news" ng-click="openModal(list)" style="padding:0;margin:0;justify-content:center;align-items:center;height:180px;width:100%;">
-                    <img ng-src="{{list.avatar}}">
+                <ion-slide class="slider-slide-image img1" ng-repeat="list in news" ng-click="openModal(list)" style="padding:0;margin:0;justify-content:center;align-items:center;height:180px;width:100%;">
+                    <div style="position:absolute;background-color:rgba(0,0,0, 0.5);width:100%;height:100%;">
+                        <p style="padding:3em 0em 0em 0em;font-weight:700;letter-spacing:1px;font-size:12px;">#mudahdannyaman</p>
+                        <p style="padding:0em 4em 0em 4em;font-weight:100;letter-spacing:1px;font-size:10px;">Selalu ada memberikan anda pengalaman belanja yang terbaik </p>
+                    </div>
+                    <img ng-src="{{list.header}}">
                 </ion-slide>
             </ion-slide-box>
         </div>
 
-        <div class="row sub-menu recom_mainmenu" style="letter-spacing:-0.2px;margin-top:-2%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);">
-            <div class="col col-50 sub-menu" style="border:0.5px solid #0081c9;" align="center">
-                <ion-item class="sub item-light" href="#/app/recomended/11" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/entertainment_b.png" style="width:20px;height:20px;margin-right:5.5em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:20px;letter-spacing:-0.4px;"> {{'entertaiment' | translate}} </p>
-                </ion-item>
-                <ion-item class="sub item-light" href="#/app/recomended/13" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/accomodation_b.png" style="width:20px;height:20px;margin-right:5.5em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:30px;letter-spacing:-0.4px;"> {{'accomodation' | translate}} </p>
-                </ion-item>
-                <ion-item class="sub item-light" href="#/app/bus" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/icon_transportation.png" style="width:20px;height:20px;margin-right:5.5em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:30px;letter-spacing:-0.4px;"> {{'transportation' | translate}} </p>
+        <!--<div class="row sub-menu recom_mainmenu" style="letter-spacing:-0.2px;margin-top:-2%;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);">
+            <div class="col col-50 sub-menu" align="center">
+                <ion-item class="sub item-light" href="#/app/recomended/11">
+                    <img src="img/icon/1.png" style="width:20px;margin-right:5.5em;"> &nbsp;
+                    <p style="margin-top:-23px;margin-left:20px;letter-spacing:-0.4px;"> Cari Tukang Sayur </p>
                 </ion-item>
             </div>
             <div class="col col-50 sub-menu" style="border:0.5px solid #0081c9;" align="center">
-                <ion-item class="sub item-light" href="#/app/recomended/12" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/dining_b.png" style="width:20px;height:20px;margin-right:4em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:15px;letter-spacing:-0.4px;"> {{'dining' | translate}} </p>
-                </ion-item>
-                <ion-item class="sub item-light" href="#/app/recomended/14" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/shopping_b.png" style="width:20px;height:20px;margin-right:4em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:32px;letter-spacing:-0.4px;"> {{'shopping' | translate}} </p>
-                </ion-item>
-                <ion-item class="sub item-light" href="#/app/gallery" style="border:0.5px solid #0081c9;">
-                    <img src="img/side-menu/gallery_b.png" style="width:20px;height:20px;margin-right:4em;"> &nbsp;
-                    <p style="margin-top:-23px;margin-left:15px;letter-spacing:-0.4px;"> {{'gallery' | translate}} </p>
-                </ion-item>
+                <ion-item class="sub item-light" href="#/app/map">
+                    <img src="img/icon/2.png" style="width:15px;margin-right:5.5em;"> &nbsp;
+                    <p style="margin-top:-23px;margin-left:30px;letter-spacing:-0.4px;"> Pedagang Terdekat </p>
+                </ion-item>                
             </div>
+        </div>-->
+
+        <div style="padding:1% 5%;" class="row sub-menu">
+            <p style="text-align:center;padding:5px;font-size:12px;">Kami menawarkan akses cepat dan mudah dari yang sebelumnya saling tunggu menunggu menjadi pilih dan mendapatkan sehingga memudahkan akses antara pembeli dengan tukang sayur</p>
         </div>
 
         <div style="padding:1% 5%;" class="row sub-menu">
             <div class="col col-50">
-                <a class="button button-assertive" ng-click="openTalkto()" style="width:100%;border-radius:10px;padding:0 2%;display:flex;align-items:center;justify-content:center;min-height:0;border:0;outline:0;height:85%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);background-color:#CD332C">
-                    <img src="img/talkToUs/icon_talktous.png" style="width:20%;padding-right:5%;padding-right: 3%;margin-left: -10%;">
-                    <strong style="font-size: 12px;margin-left: 10px;">Talk</strong>
-                    <span style="font-size: 12px">toUs</span>
+                <a class="button button-assertive" href="#/app/tenantDetail/257" style="width:100%;border-radius:10px;padding:0 2%;display:flex;align-items:center;justify-content:center;min-height:0;border:0;outline:0;height:85%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);background-color:#88C057">
+                    <!--<img src="img/talkToUs/icon_talktous.png" style="width:20%;padding-right:5%;padding-right: 3%;margin-left: -10%;">-->
+                    <strong style="font-size: 12px;">Pesan</strong> &nbsp;
+                    <span style="font-size: 12px">Bahan Pangan</span>
                 </a>
             </div>
             <div class="col">
-                <a class="button button-positive" href="#/app/coupon" style="width:100%;border-radius:10px;padding:0 2%;display:flex;align-items:center;justify-content:center;min-height:0;border:0;outline:0;color:white;background-color:#0081c9;height:85%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);">
-                    <strong style="font-size: 12px">{{'discount' | translate}}</strong>
-                    <span style="font-size: 12px">{{'coupon' | translate}}</span>
+                <a class="button button-positive" ui-sref="app.map" style="width:100%;border-radius:10px;padding:0 2%;display:flex;align-items:center;justify-content:center;min-height:0;border:0;outline:0;color:white;background-color:#16a085;height:85%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);">
+                    <strong style="font-size: 12px">Pedagang</strong> &nbsp;
+                    <span style="font-size: 12px">Terdekat</span>
                 </a>
             </div>
         </div>    
-
-        <div style="padding:1% 5%;" class="row sub-menu">
-            <div class="col" ng-click="gotocurrency()" ng-controller="currency_home" style="background-color:#fff;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);border-radius: 15px">
-                <div ng-show="currate" ng-if="currate != null" class="row">
-                    <div class="col col-70">
-                        <p style="font-size:12px"> {{ currate.time | date:'yyyy-MM-dd HH:mm:ss'}} </p>
-                    </div>
-                    <div class="col col-30">
-                        <img src="img/ic_settings.png" style="width:15%;float:right;">
-                    </div>
-                </div>
-                <div ng-if="currate != null" class="row">
-                    <div class="col col-50">
-                        <img width="32" style="vertical-align: middle" ng-src="{{currate.flag1}}">
-                        <i style="margin-left:3%;vertical-align:middle;font-size:12px;">{{currate.rate1 *10000| limitTo:5}} {{currate.cur1}}</i>
-                    </div>
-                    <div class="col col-50">
-                        <img width="32" style="vertical-align: middle" ng-src="{{currate.flag2}}">
-                        <i style="margin-left:3%;  vertical-align: middle;font-size: 12px">{{currate.rate2 *10000|limitTo:5}}  {{currate.cur2}}</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div style="padding:1% 5%;" class="row sub-menu">
-            <div class="col col-25" style="text-align:center;vertical-align:middle;margin-top:3%;line-height:1em;font-size:0.9em;padding:0 5px">
-                {{'connect' | translate}}
-            </div>
-            <div class="col col-40" style="vertical-align: middle;margin-top:3%;padding:0;">
-                <img ng-click="gotoyoutbe()" src="img/youtube_main.png" style="width:22%">
-                <img src="img/instagram_main.png " style="width:22% ">
-                <img src="img/twitter_main.png " style="width:22% ">
-                <img src="img/facebook_main.png " style="width:22% ">
-            </div>
-            <div ng-click="afliates_ovo()" class="col col-15 " style="text-align:center;vertical-align: middle;margin-top: 3%;font-size:0.9em;padding: 3px 5px"> {{'affiliates' | translate}} </div>
-            <div ng-click="afliates_ovo()" class="col col-15" style="text-align:center;margin-top: 3%;padding: 0 5px">
-                <img style="width:1.8em" src="img/icon_ovo.png">
-            </div>
-        </div>
 
     </ion-content>
 </ion-view>

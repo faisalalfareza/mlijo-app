@@ -1,11 +1,11 @@
- <ion-view view-title="{{tenantname}}">
+ <ion-view view-title="Barokah Makmur" style="background-color: #88C057;">
      <ion-nav-bar class="bar bar-positive bar-custom" style="background-color: #0081c9;">
         <ion-nav-back-button class="button-clear" ng-click="myGoBack()">
         </ion-nav-back-button>
     </ion-nav-bar>
     <ion-content>
         <!--tenant action-->
-        <div class="row row-center rowaction" style="height:auto">
+        <!--<div class="row row-center rowaction" style="height:auto;">
             <div class="col tenantAction">
                 <a href="tel:{{tenantdata.phone}}" style="text-decoration:none">
                     <img src="img/tenantDetail/action_call.png" class="ion-image">
@@ -30,42 +30,14 @@
                     <i>{{'action_review'| translate}}</i>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!--end Tenatn Action-->
+        
+        <img ng-src="img/headers.png" style="height:180px;width:100%;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);">
 
-        <div style="display: block"></div>
-
-        <div class="row thumbnailGaleri">
-            <div class="col thumbnailimg1">
-                <a ng-if="img.avatar != null" ng-href="#/app/tenantDetailImage/{{img.idtenant}}/{{$index + 0}}">
-                    <img height="253" class="col" ng-src="{{img.avatar != null ? img.avatar : 'img/items/property_add_photo.png'}}">
-                </a>
-                <a ng-if="img.avatar == null">
-                  <img height="253" class="col" ng-src="img/items/property_add_photo.png">
-                </a>
-            </div>
-
-            <div class="col thumbnailGaleri">
-                <a ng-if="img1.avatar != null" ng-href="#/app/tenantDetailImage/{{img.idtenant}}/{{$index + 1}}">
-                    <img height="126" style="background-repeat:no-repeat;background-size: cover;background-attachment:fixed;" class="col" ng-src="{{img1.avatar != null ? img1.avatar : 'img/items/property_add_photo.png'}}">
-                </a>
-                <a ng-if="img1.avatar == null">
-                  <img height="126" style="background-repeat:no-repeat;background-size: cover;background-attachment:fixed;" class="col" ng-src="img/items/property_add_photo.png">
-                </a>
-
-                <a ng-if="img2.avatar != null" ng-href="#/app/tenantDetailImage/{{img.idtenant}}/{{$index + 2}}">
-                    <img height="126" class="col" ng-src="{{img2.avatar != null ? img2.avatar : 'img/items/property_add_photo.png'}}">
-                </a>
-                <a ng-if="img2.avatar == null">
-                  <img height="126" class="col" ng-src="img/items/property_add_photo.png">
-                </a>
-            </div>
-        </div>
-
-
-        <div class="contentTenant" style="margin-bottom:6%">
+        <div class="contentTenant" style="margin-bottom:6%;color:white !important;">
             <h4>
-                <p>{{tenantdata.name}}</p>
+                <p style="color:white">Barokah Makmur</p>
             </h4>
             <div class="row" style="width: 100%">
                 <div class="col-50">
@@ -93,11 +65,11 @@
                     </fieldset>
                 </div>
                 <div class="col col-50 " style="padding-top: 0">
-                    <p id="disntance" style="">{{distance| number:0}} KM</p>
+                    <p id="disntance" style="">12 KM</p>
                 </div>
             </div>
             <div class="row">
-                <p id="category">{{categorytenant}}</p>
+                <p id="category">Sayur, Buah</p>
             </div>
             <div class="row">
                 <div class="col col-75" style="padding: 0;margin-top:0">
@@ -111,6 +83,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="row sub-menu recom_mainmenu" style="letter-spacing:-0.2px;margin-top:-2%;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);">
+            <div class="col col-50 sub-menu" align="center">
+                <ion-item class="sub item-light" href="tel:{{tenantdata.phone}}">
+                    <p style="font-family:'Calibri Light';color:#6B6A6A">Panggil</p> <br>
+                    <p style="margin-top:-23px;letter-spacing:-0.4px;"> +6283834415004 </p>
+                </ion-item>
+            </div>
+            <div class="col col-50 sub-menu" style="border:0.5px solid #0081c9;" align="center">
+                <ion-item class="sub item-light" href="#/app/bus">
+                    <p style="font-family:'Calibri Light';color:#6B6A6A">Pesan</p> <br>
+                    <p style="margin-top:-23px;letter-spacing:-0.4px;"> Tambah Pengalaman Belanja </p>
+                </ion-item>                
+            </div>
+        </div>
+
         <div style="padding-left: 8%;padding-right: 8%;padding-top: 2%" class="contentTenantBottom">
             <div class="row" style="">
                 <div class="col col-10">
@@ -131,38 +119,37 @@
                     <i>{{tenantdata.phone}}</i>
                 </div>
             </div>
+
+            <hr style="border:0.5px solid rgba(236, 240, 241,1.0)">
+
+            <table align="center" style="width:100%;margin-top:10px;color:#444444;">
+                <tr>
+                    <td style="line-height:0.3em;padding:8px;border-right:0.5px solid rgba(236, 240, 241,1.0)">
+                        <p style="font-weight:bold">Sayur Bayam</p>
+                        <p>Tersedia 5 Ikat</p>
+                        <p>3000/Ikat</p>
+                        
+                    </td>
+                    <td style="line-height:0.3em;padding:8px;">
+                        <p style="font-weight:bold">Sayur Kangkung</p>
+                        <p>Tersedia 3 Ikat</p>
+                        <p>3000/Ikat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="line-height:0.3em;padding:8px;border-right:0.5px solid rgba(236, 240, 241,1.0);">
+                        <p style="font-weight:bold">Bawang</p>
+                        <p>Tersedia 5 Kantong</p>
+                        <p>2000/Ikat</p>
+                    </td>
+                    <td style="line-height:0.3em;padding:8px;">
+                        <p style="font-weight:bold">Ayam Potong</p>
+                        <p>Tersedia 5 kantung</p>
+                        <p>9000/Ikat</p>
+                    </td>
+                </tr>                
+            </table>
         </div>
-        <div style="padding-left: 8%;padding-right: 8%;padding-top: 2%;" class="contentTenantBottom">
-            <div class="row" style="border-top:0.5px solid;border-top-color: #0c60ee">
-                <div class="col col-30">
-                    <i style="margin-top: 10%;margin-bottom: 10%">{{'rate_this_tenant' | translate}}</i>
-                </div>
-                <div class="col col-70">
-                    <fieldset class="ratingbtn postratingbtn">
-                        <input ng-change="inputrate(rating)" type="radio" id="rate5" ng-model="rating" style="" ng-value="5" />
-                        <label class="full" for="rate5" title="Awesome - 5 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate4half" ng-model="rating" ng-value="4.5" />
-                        <label class="half" for="rate4half" title="Pretty good - 4.5 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate4" ng-model="rating" ng-value="4" />
-                        <label class="full" for="rate4" title="Pretty good - 4 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate3half" ng-model="rating" ng-value="3.5" />
-                        <label class="half" for="rate3half" title="Meh - 3.5 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate3" ng-model="rating" ng-value="3" />
-                        <label class="full" for="rate3" title="Meh - 3 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate2half" ng-model="rating" ng-value="2.5" />
-                        <label class="half" for="rate2half" title="Kinda bad - 2.5 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate2" ng-model="rating" ng-value="2" />
-                        <label class="full" for="rate2" title="Kinda bad - 2 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate1half" ng-model="rating" ng-value="1.5" />
-                        <label class="half" for="rate1half" title="Meh - 1.5 stars"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="rate1" ng-model="rating" ng-value="1" />
-                        <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                        <input ng-change="inputrate(rating)" type="radio" id="ratehalf" ng-model="rating" ng-value="0.5" />
-                        <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                    </fieldset>
-                </div>
-            </div>
-        </div>
-        </div>
+
     </ion-content>
 </ion-view>

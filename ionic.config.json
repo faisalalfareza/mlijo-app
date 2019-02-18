@@ -1,4 +1,8 @@
 {
   "name": "LiveIn",
-  "app_id": "62a7483e"
+  "app_id": "62a7483e",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
 }

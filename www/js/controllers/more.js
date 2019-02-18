@@ -2,7 +2,27 @@ angular
     .module('livein')
     .controller('more', more);
 
-    function more($translate, $stateParams, $ionicPopup, $ionicLoading, $scope, $window, $localStorage, $cordovaToast, $filter) {
+    function more($translate, LoginService, $stateParams, $ionicPopup, $ionicLoading, $scope, $window, $localStorage, $cordovaToast, $filter) {
+        
+        $scope.logoutConfirm = logoutConfirm;
+
+        function logoutConfirm() {
+            var confirmPopup = $ionicPopup.confirm({
+                template: $filter('translate')('dialog_signout'),
+                okText: $filter('translate')('yes'),
+                cancelText: $filter('translate')('no'),
+                okType: "button-stable"
+            });
+
+            confirmPopup.then(function (res) {
+                if (res) {
+                    LoginService.logoutUser();
+                    $ionicLoading.show({ template: $filter('translate')('logoutmessage') + "...", duration: 500 });
+                    $state.go('login');
+                }
+            });
+        }
+        
         //translate
         var data = localStorage.getItem('NG_TRANSLATE_LANG_KEY');
         $scope.Tr = data;

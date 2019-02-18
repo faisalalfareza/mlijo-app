@@ -1,46 +1,16 @@
 <ion-view hide-nav-bar="true">
-    <ion-slide-box auto-play="true" does-continue="true" slide-interval="3000" on-slide-changed="slideChanged(index)">
+    <ion-slide-box auto-play="true" show-pager="false" does-continue="true" slide-interval="3000" on-slide-changed="slideChanged(index)">
        
         <ion-slide class="img1">
           <div class="splashScreen">  
-            <img src="img/back2.png" width="50%">
-            <h3>
-                <w>{{ 'splash_g1_1'| translate }}</w>
-            </h3>
+            <img src="img/groceries-bag.png" width="40%">
           </div>
-        </ion-slide>
-
-        <ion-slide class="img2">
-            <div class="splashScreen2">
-                <h3>
-                    <w>{{ 'splash_g2_1'| translate }}</w>
-                </h3>
-                <h3>
-                    <w>{{ 'splash_g2_2'| translate }}</w>
-                </h3>
-                <h3>
-                    <w>{{ 'splash_g2_3'| translate }}</w>
-                </h3>
-            </div>
-        </ion-slide>
-
-        <ion-slide class="img3">
-            <div class="splashScreen3">
-                <h3>
-                    <w>{{ 'splash_g3_1'| translate }}</w>
-                </h3>
-                <h4>
-                    <w>{{ 'splash_g3_2'| translate }}</w>
-                </h4>
-            </div>
         </ion-slide>
 
     </ion-slide-box>
 
     <div class="headerSphlash">
-        <div class="bottomLeft"> <w>{{ 'version'| translate }} 1.0</w> </div>
-        <button class="getStarted button button-block" click-and-wait="startApp()" style="background-color:#0D6DB6;border:0;outline:0;color:white;">{{ 'get_started'| translate }}</button>
-        <button class="button-clear bottomRight" click-and-wait="startApp()"><w click-and-wait="startApp()">{{ 'skip'| translate }}</w></button>
+        <button class="getStarted button button-block" click-and-wait="startApp()" style="background-color:transparent !important;border:0;outline:0;color:white;">{{ 'get_started'| translate }}</button>
     </div>
 
 </ion-view>
